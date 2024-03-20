@@ -32,7 +32,8 @@ const GridView = ({ side, size, gridType, listSize, mapModal, mapView, relativeS
               Object.keys(res.data)
                 .map((key) => [res.data[key]])
                 .flat(2)
-                .filter((arrData) => Array.isArray(arrData.img)),
+                //  added that image url is valid. None of the entries here carries multiple images.
+                .filter((arrData) => String(arrData.img).trim().length > 0 ),
             );
             console.log("dadadadad:",res.data)
             console.log("filtured data", Object.keys(res.data).map((key) => [res.data[key]]).flat(2).filter((arrData) => Array.isArray(arrData.img)))
