@@ -45,7 +45,7 @@ export default async function handler(req, res) {
   const j = await prisma.listingpropertyinmodernvideolayout.findMany();
   const k = await prisma.propertylisting.findMany();
   const l = await prisma.propertyoftheday.findMany();
-  console.log("huhuhuhuhu",h);
+  // console.log("huhuhuhuhu",h);
   const Data =  {
     FeaturedProperty: a,
     FeaturedPropertyInClassicLayout: b,
