@@ -36,10 +36,10 @@ const PropertySection = ({ value, range }) => {
         <Row className=' ratio_landscape'>
           <Col>
           <div className='title-1'>
-    //           <span className='label label-gradient'>For sale</span>
-    //           <h2>{LatestForSale}</h2>
-    //           <hr />
-    //         </div>
+              <span className='label label-gradient'>For sale</span>
+              <h2>{LatestForSale}</h2>
+              <hr />
+            </div>
             <Row className='listing-hover-property'>
               {value &&
                 value.map((data, i) => (
