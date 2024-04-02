@@ -14,8 +14,8 @@ model featuredproperty {
   label       String? @db.VarChar(255)
   description String? @db.VarChar(255)
   type        String? @db.VarChar(255)
-  img         String? @db.VarChar(255)
   imgLabel    String? @db.VarChar(255)
+  img         String? @db.VarChar(255)
 }
 
 model featuredpropertyinclassiclayout {
@@ -52,8 +52,8 @@ model latestforsalepropertydata {
   bath           Int
   balcony        Int
   area           Int
-  img            String?  @db.VarChar(255)
   date           DateTime
+  img            String?  @db.VarChar(255)
 }
 
 model latestpropertydata {

@@ -2,7 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/home": "pages/home.js",
-  "/api/property": "pages/api/property.js",
-  "/properties": "pages/properties.js"
+  "/properties": "pages/properties.js",
+  "/listing/tab-layout/properties": "pages/listing/tab-layout/properties.js",
+  "/api/property": "pages/api/property.js"
 }

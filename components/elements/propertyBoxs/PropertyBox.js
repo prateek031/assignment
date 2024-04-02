@@ -24,7 +24,11 @@ const PropertyBox = ({ data, relativeSlider, video }) => {
         <div className="property-box">
           <div className="property-image">
             {/* need to pass image as an array for mapping. component assumes an array while this is a string */}
-            {relativeSlider ? <ThumbnailSlider images={data.img} videoData={data.video} video={video} /> : <ImageSlider images={[data.img]} />}
+            {relativeSlider ? (
+    <ThumbnailSlider images={[data.img]} videoData={data.video} video={video} />
+  ) : (
+    <ImageSlider images={[data.img]} />
+  )}
             <div className="labels-left">
               <PropertyLabel labels={data.label} />
             </div>

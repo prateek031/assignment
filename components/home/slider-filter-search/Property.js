@@ -5,24 +5,46 @@
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
 import { LatestForSale, Rent } from "../../../constValues/constValues";
-import PropertyBox from "../../elements/propertyBoxs/PropertyBox";
+import PropertyBoxOne from "../../elements/propertyBoxs/PropertyBoxOne";
+
 
 const PropertySection = ({ value, range }) => {
   return (
-    <section className='property-section'>
+    // <section className='property-section'>
+    //   <Container>
+    //     <Row className='ratio_55'>
+    //       <Col>
+    //         <div className='title-1'>
+    //           <span className='label label-gradient'>For sale</span>
+    //           <h2>{LatestForSale}</h2>
+    //           <hr />
+    //         </div>
+    //         <Row className='property-2 column-space'>
+    //           {value &&
+    //             value.slice(`${range ? range[0] : 0}`, `${range ? range[1] : 6}`).map((data, i) => (
+    //               <Col xl='4' md='6' className='wow fadeInUp' key={i}>
+    //                 <PropertyBoxOne data={data} />
+    //               </Col>
+    //             ))}
+    //         </Row>
+    //       </Col>
+    //     </Row>
+    //   </Container>
+    // </section>
+    <section className='property-section slick-between slick-shadow'>
       <Container>
-        <Row className='ratio_55'>
+        <Row className=' ratio_landscape'>
           <Col>
-            <div className='title-1'>
-              <span className='label label-gradient'>For sale</span>
-              <h2>{LatestForSale}</h2>
-              <hr />
-            </div>
-            <Row className='property-2 column-space'>
+          <div className='title-1'>
+    //           <span className='label label-gradient'>For sale</span>
+    //           <h2>{LatestForSale}</h2>
+    //           <hr />
+    //         </div>
+            <Row className='listing-hover-property'>
               {value &&
-                value.slice(`${range ? range[0] : 0}`, `${range ? range[1] : 6}`).map((data, i) => (
-                  <Col xl='4' md='6' className='wow fadeInUp' key={i}>
-                    <PropertyBox data={data} />
+                value.map((data, i) => (
+                  <Col xl='4' md='6' key={i}>
+                    <PropertyBoxOne data={data} />
                   </Col>
                 ))}
             </Row>

@@ -36,7 +36,7 @@ const GridView = ({ side, size, gridType, listSize, mapModal, mapView, relativeS
                 .filter((arrData) => String(arrData.img).trim().length > 0 ),
             );
             console.log("dadadadad:",res.data)
-            console.log("filtured data", Object.keys(res.data).map((key) => [res.data[key]]).flat(2).filter((arrData) => Array.isArray(arrData.img)))
+            console.log("filtured data", Object.keys(res.data).map((key) => [res.data[key]]).flat(2).filter((arrData) => String(arrData.img).trim().length > 0 ))
       })
       .catch((error) => console.log("Error", error));
   }, [relativeSlider]);

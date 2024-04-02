@@ -20,7 +20,7 @@ const FeatureSection = ({ value }) => {
             <div className="title-1 text-white">
               <span className="label label-gradient">Our</span>
               <h2>{FeaturedProperty}</h2>
-              <hr />
+                 <hr />
             </div>
             <NoSsr>
               <Slider className="feature-1 arrow-light" {...feature1}>
