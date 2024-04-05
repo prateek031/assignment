@@ -7,9 +7,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import BodyContent from "../../components/property/tabPanelPages";
 import FooterOne from "../../layout/footers/FooterOne";
 import NavbarFive from "../../layout/headers/NavbarFive";
-
-export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 import Breadcrumb from "../../layout/Breadcrumb/Breadcrumb";
+export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 
 const TemplateBreadcrumb = () => {
   return (

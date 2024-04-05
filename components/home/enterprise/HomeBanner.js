@@ -6,7 +6,7 @@
 import React from "react";
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
-import { Button, Col, Container, Row } from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
 import Link from "next/link";
 import WhatAreYouLookingFor from "../../elements/WhatAreYouLookingFor";
 import { VideoDetail, WantToBuyOrRentHome } from "../../../constValues/constValues";

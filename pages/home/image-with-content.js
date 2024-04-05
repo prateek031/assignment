@@ -6,12 +6,11 @@
 import React, { useEffect } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import NavbarOne from "../../layout/headers/NavbarOne";
-
-export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 import FooterOne from "../../layout/footers/FooterOne";
 import BodyContent from "../../components/home/image-with-content";
 import { Logo4 } from "../../components/elements/Logo";
 import { ConfigDB } from "../../config/themeCustomizerConfig";
+export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 
 const ImageWithContent = () => {
   useEffect(() => {

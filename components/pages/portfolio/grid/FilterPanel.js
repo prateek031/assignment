@@ -3,7 +3,7 @@
  * with a list of buttons that filter the gridData based on the type of property
  * @returns The FilterPanel component is being returned.
  */
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 import { Home, Key, Percent, TrendingUp } from "react-feather";
 
 const FilterPanel = ({ setFilterData, isActive, setIsActive, gridData, size }) => {

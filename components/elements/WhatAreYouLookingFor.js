@@ -1,4 +1,4 @@
-import Link from "next/link";
+// import Link from "next/link";
 import React from "react";
 import { AppPropertyData } from "../../data/appPropertyData";
 

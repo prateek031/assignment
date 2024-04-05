@@ -3,10 +3,9 @@ import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import dynamic from "next/dynamic";
 import NavbarSix from "../../../../layout/headers/NavbarSix";
-
-export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 import FooterOne from "../../../../layout/footers/FooterOne";
 import GridView from "../../../../components/listing/gridView/grid/GridView";
+export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 
 const MyAwesomeMap = dynamic(() => import("../../../../components/listing/gridView/map/LeafletMap"), { ssr: false });
 const LeafletMap = () => {

@@ -2,12 +2,14 @@
  * It takes a singleData prop and uses it to render a gallery of images.
  * @returns The image is being returned as a string.
  */
+
 import { useRouter } from "next/router";
 import React from "react";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import { Col, Container, Row } from "reactstrap";
 import Img from "../../../utils/BackgroundImageRatio";
 
+// eslint-disable-next-line jsx-a11y/anchor-is-valid
 const ImageBox = ({ singleData }) => {
   const router = useRouter();
   const { id } = router.query;

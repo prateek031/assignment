@@ -1,12 +1,10 @@
-import { propertyData } from "../../public/API-Data/property";
+// import { propertyData } from "../../public/API-Data/property";
 const { PrismaClient } = require('@prisma/client')
 
 const prisma = new PrismaClient()
 
 export default async function handler(req, res) {
   try {
-  // const a = await prisma.featuredproperty.findMany();
-
   const a= [
     {
       city: "Explore",
@@ -45,7 +43,6 @@ export default async function handler(req, res) {
   const j = await prisma.listingpropertyinmodernvideolayout.findMany();
   const k = await prisma.propertylisting.findMany();
   const l = await prisma.propertyoftheday.findMany();
-  // console.log("huhuhuhuhu",h);
   const Data =  {
     FeaturedProperty: a,
     FeaturedPropertyInClassicLayout: b,
@@ -59,7 +56,6 @@ export default async function handler(req, res) {
     ListingPropertyInModernVideoLayout: j,
     PropertyListing: k,
     PropertyOfTheDay: l,
-    "alalalalalalalala":"kikikikkiii0",
   };
   
     res.status(200).json(Data);

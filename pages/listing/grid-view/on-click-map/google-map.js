@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import NavbarThree from "../../../../layout/headers/NavbarThree";
-
-export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 import FooterOne from "../../../../layout/footers/FooterOne";
 import Breadcrumb from "../../../../layout/Breadcrumb/Breadcrumb";
 import GridView from "../../../../components/listing/gridView/grid/GridView";
 import Google from "../../../../components/listing/gridView/map/GoogleMap";
+export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 
 const GoogleMap = () => {
   const [mapModal, setMapModal] = useState(false);

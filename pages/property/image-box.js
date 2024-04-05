@@ -9,9 +9,9 @@ import BodyContent from "../../components/property/tabPanelPages";
 import FooterOne from "../../layout/footers/FooterOne";
 import NavbarFive from "../../layout/headers/NavbarFive";
 
-export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 import ImgBox from "../../components/property/tabPanelPages/ImageBox";
 import { getData } from "../../utils/getData";
+export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 
 const ImageBox = () => {
   const router = useRouter();

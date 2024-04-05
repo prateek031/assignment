@@ -6,11 +6,10 @@
 import React, { useEffect } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import NavbarFour from "../../layout/headers/NavbarFour";
-
-export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 import FooterFour from "../../layout/footers/FooterFour";
 import BodyContent from "../../components/home/search-tab";
 import { ConfigDB } from "../../config/themeCustomizerConfig";
+export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 
 const SearchTab = () => {
   useEffect(() => {

@@ -5,9 +5,8 @@ import BodyContent from "../../../components/pages/blogDetailPages";
 import Breadcrumb from "../../../layout/Breadcrumb/Breadcrumb";
 import FooterOne from "../../../layout/footers/FooterOne";
 import NavbarThree from "../../../layout/headers/NavbarThree";
-
-export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 import Img from "../../../utils/BackgroundImageRatio";
+export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 
 const DetailWithVideo = () => {
   const [modal, setModal] = useState(false);

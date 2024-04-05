@@ -10,11 +10,11 @@ import BodyContent from "../../components/property/tabPanelPages";
 import SliderSection from "../../components/property/tabPanelPages/Slider";
 import FooterOne from "../../layout/footers/FooterOne";
 import NavbarFive from "../../layout/headers/NavbarFive";
-
-export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 import { getData } from "../../utils/getData";
+export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 
 const View360 = () => {
+  const router = useRouter();
   const { id } = router.query;
   const [value, setValue] = useState({});
 

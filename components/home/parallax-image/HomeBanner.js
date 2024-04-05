@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { Fragment, useState } from "react";
 import { MapPin } from "react-feather";
 import { useDispatch } from "react-redux";
-import { Button, Col, Container, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Row } from "reactstrap";
+import { Col, Container, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Row } from "reactstrap";
 
 const HomeBannerSection = () => {
   const [toggle, setToggle] = useState(false);

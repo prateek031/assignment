@@ -8,9 +8,9 @@ import BodyContent from "../../components/pages/agency/agencyGrid";
 import Breadcrumb from "../../layout/Breadcrumb/Breadcrumb";
 import FooterOne from "../../layout/footers/FooterOne";
 import NavbarThree from "../../layout/headers/NavbarThree";
+import { getData } from "../../utils/getData";
 
 export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
-import { getData } from "../../utils/getData";
 
 const AgentList = () => {
   const [clientData, setClientData] = useState();
@@ -22,11 +22,12 @@ const AgentList = () => {
       })
       .catch((error) => console.log("Error", error));
   }, []);
+  const listStyle = { style: "list-view" };
   return (
     <>
       <NavbarThree />
       <Breadcrumb />
-      <BodyContent clientData={clientData} style={"list-view"} listSize={2} size={3} />
+      <BodyContent clientData={clientData} {...listStyle} listSize={2} size={3} />
       <FooterOne />
     </>
   );

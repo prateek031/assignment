@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import NavbarThree from "../../../layout/headers/NavbarThree";
-
-export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 import FooterOne from "../../../layout/footers/FooterOne";
 import Breadcrumb from "../../../layout/Breadcrumb/Breadcrumb";
 import BodyContent from "../../../components/pages/agency/agencyGrid";
 import { getData } from "../../../utils/getData";
+export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 
 const AgencyProfile = () => {
   const [clientData, setClientData] = useState();

@@ -20,9 +20,7 @@ export const BrowseProperty = "Browse property";
 export const MeetOurAgent = "Meet Our Team";
 export const Agent = "Heads";
 export const ViewPortfolio = "View Portfolio";
-
 export const Contact = "Contact ";
-
 export const Connect = "Connect";
 export const HappyClients = "Happy clients";
 export const Our = "Our";

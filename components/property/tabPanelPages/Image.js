@@ -2,6 +2,7 @@
  * It takes an array of images and returns a gallery of images
  * @returns The return value of the function is being returned.
  */
+
 import React from "react";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import { Col, Row } from "reactstrap";

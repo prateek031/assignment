@@ -5,10 +5,9 @@
 import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import NavbarThree from "../../layout/headers/NavbarThree";
-
-export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 import FooterOne from "../../layout/footers/FooterOne";
 import BodyContent from "../../components/home/modern";
+export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 
 const Modern = () => {
   return (

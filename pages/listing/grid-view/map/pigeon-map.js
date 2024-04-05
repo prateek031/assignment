@@ -4,12 +4,11 @@
 import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import NavbarThree from "../../../../layout/headers/NavbarThree";
-
-export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 import Breadcrumb from "../../../../layout/Breadcrumb/Breadcrumb";
 import FooterOne from "../../../../layout/footers/FooterOne";
 import MapView from "../../../../components/listing/gridView/map/MapView";
 import Pigeon from "../../../../components/listing/gridView/map/PigeonMap";
+export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ["common"])) } });
 
 const PigeonMap = () => {
   return (

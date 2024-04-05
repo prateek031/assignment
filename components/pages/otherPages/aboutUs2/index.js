@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { AppPropertyData } from "../../../../data/appPropertyData";
 import { getData } from "../../../../utils/getData";
-import BlogSection from "../../../home/corporate/Blog";
+// import BlogSection from "../../../home/corporate/Blog";
 import ServiceSection from "../../../home/corporate/Service";
 import TestimonialSection from "../../../home/enterprise/Testimonial";
 import AboutSection from "../../../home/slider-filter-search/About";
 import AboutUsSection from "./AboutUs";
 
 const BodyContent = () => {
-  const [value, setValue] = useState();
+  const [setValue] = useState();
   const [clientData, setClientData] = useState();
 
   useEffect(() => {

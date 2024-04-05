@@ -6,7 +6,7 @@
 
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { Button, Col, Row } from "reactstrap";
+import {  Col, Row } from "reactstrap";
 import { getData } from "../../../../utils/getData";
 import { DropdownInputFields } from "../../../elements/DropdownInputFields";
 import RangeInputFields from "../../../elements/RangeInputFields";
